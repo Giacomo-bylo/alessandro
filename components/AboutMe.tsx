@@ -15,22 +15,22 @@ const AboutMe: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             {/* Photo */}
-            <div className="lg:w-1/3">
+            <div className="lg:w-1/2 w-full">
               <div className="relative">
-                <div className="w-64 h-64 md:w-80 md:h-80 rounded-sm overflow-hidden shadow-2xl mx-auto">
+                <div className="rounded-sm overflow-hidden shadow-2xl">
                   <img
                     src={IMAGES.owner}
                     alt="Property owner and technical professional"
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto object-cover"
                     loading="lazy"
                   />
                 </div>
-                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-terracotta/10 rounded-sm -z-10" />
+                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-terracotta/10 rounded-sm -z-10" />
               </div>
             </div>
 
             {/* Content */}
-            <div className="lg:w-2/3">
+            <div className="lg:w-1/2">
               <h2 className="text-3xl md:text-4xl font-heading font-semibold mb-6 tracking-tight text-navy">
                 About Me
               </h2>
