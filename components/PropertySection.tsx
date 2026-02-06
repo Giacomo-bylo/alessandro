@@ -71,21 +71,29 @@ const PropertySection: React.FC = () => {
               <h3 className="text-lg font-heading font-semibold mb-4 text-center text-warm-white/80">
                 Floor Plan — Ground Floor
               </h3>
-              <div className="overflow-hidden rounded-sm bg-white/10 min-h-[300px] flex items-center justify-center">
-                <img
-                  src={IMAGES.floorPlan}
-                  alt="Floor plan of the ground floor apartment"
-                  className="w-full h-auto object-contain"
-                  loading="lazy"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                    const parent = target.parentElement;
-                    if (parent) {
-                      parent.innerHTML = '<p class="text-warm-white/50 font-body text-center p-8">Floor plan coming soon</p>';
-                    }
-                  }}
-                />
+              <div className="overflow-hidden rounded-sm bg-white min-h-[400px]">
+                <object
+                  data={IMAGES.floorPlan}
+                  type="application/pdf"
+                  className="w-full h-[400px]"
+                >
+                  <div className="flex flex-col items-center justify-center h-[400px] bg-white/10 p-8">
+                    <p className="text-warm-white/70 font-body text-center mb-4">
+                      Floor plan preview not available in this browser.
+                    </p>
+                    <a
+                      href={IMAGES.floorPlan}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-terracotta hover:bg-[#b06a4f] text-warm-white px-6 py-3 rounded-sm text-sm font-heading font-semibold transition-all"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                      View Floor Plan (PDF)
+                    </a>
+                  </div>
+                </object>
               </div>
             </div>
           </div>

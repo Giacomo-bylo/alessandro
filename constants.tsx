@@ -16,7 +16,7 @@ export const IMAGES = {
   whyUdine: "/IMAGE 2-WHY-UDINE.webp",
   mapItaly: "/IMAGE 3-italia.webp",
   mapFVG: "/IMAGE 4-FVG.webp",
-  floorPlan: "/IMAGE 5-floorplan.webp", // Add this image when available
+  floorPlan: "/IMAGE 5 - Planimetria appartamento.pdf",
   house1: "/IMAGE 6.webp",
   house2: "/IMAGE 7.webp",
   house3: "/IMAGE 8.webp",
