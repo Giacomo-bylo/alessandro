@@ -1,14 +1,14 @@
 
 import React from 'react';
-import { IMAGES, ICONS } from '../constants';
+import { ICONS } from '../constants';
 
 const Hero: React.FC = () => {
   return (
     <section id="hero" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Background with overlay */}
+      {/* Background with overlay - Original lake/mountain image */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: `url('${IMAGES.hero}')` }}
+        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1920')` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/40 to-navy/80 z-10" />
       </div>
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#why-udine"
+            href="#start"
             className="w-full sm:w-auto bg-terracotta hover:bg-[#b06a4f] text-warm-white px-10 py-4 rounded-sm text-sm font-heading font-semibold transition-all uppercase tracking-widest shadow-xl"
           >
             Learn More

@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import StartSection from './components/StartSection';
 import WhyUdine from './components/WhyUdine';
 import LocationMaps from './components/LocationMaps';
 import PropertySection from './components/PropertySection';
@@ -21,40 +22,43 @@ const App: React.FC = () => {
       <Header />
 
       <main>
-        {/* 1. Hero Section */}
+        {/* 1. Hero Section - Lake/Mountain */}
         <Hero />
 
-        {/* 2. Why Udine Section */}
+        {/* 2. Start with one apartment */}
+        <StartSection />
+
+        {/* 3. Why Udine Section */}
         <WhyUdine />
 
-        {/* 3. Location Within the Region */}
+        {/* 4. Location Within the Region */}
         <LocationMaps />
 
-        {/* 4. The Property - Ground Floor Apartment */}
+        {/* 5. The Property - Ground Floor Apartment */}
         <PropertySection />
 
-        {/* 5. Current Condition & Potential */}
+        {/* 6. Current Condition & Potential */}
         <CurrentCondition />
 
-        {/* 6. Pricing Section */}
+        {/* 7. Pricing Section */}
         <Pricing />
 
-        {/* 7. Future Possibility (Optional) */}
+        {/* 8. Future Possibility (Optional) */}
         <FuturePossibility />
 
-        {/* 8. Renovation: Optional, But Not Undefined */}
+        {/* 9. Renovation: Optional, But Not Undefined */}
         <Renovation />
 
-        {/* 9. How the Process Works */}
+        {/* 10. How the Process Works */}
         <ProcessSection />
 
-        {/* 10. About Me Section */}
+        {/* 11. About Me Section */}
         <AboutMe />
 
-        {/* 11. FAQ Section */}
+        {/* 12. FAQ Section */}
         <FAQ />
 
-        {/* 12. Final CTA Section */}
+        {/* 13. Final CTA Section */}
         <ContactForm />
       </main>
 
