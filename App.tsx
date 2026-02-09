@@ -2,7 +2,6 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import StartSection from './components/StartSection';
 import WhyUdine from './components/WhyUdine';
 import LocationMaps from './components/LocationMaps';
 import PropertySection from './components/PropertySection';
@@ -22,13 +21,10 @@ const App: React.FC = () => {
       <Header />
 
       <main>
-        {/* 1. Hero Section - Lake/Mountain */}
+        {/* 1. Hero Section - Start with one apartment */}
         <Hero />
 
-        {/* 2. Start with one apartment */}
-        <StartSection />
-
-        {/* 3. Why Udine Section */}
+        {/* 2. Why Udine Section */}
         <WhyUdine />
 
         {/* 4. Location Within the Region */}
